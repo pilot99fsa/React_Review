@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 
 function ChildComp({ data }) {
   useEffect(() => {
-    // dataオブジェクトを使用する副作用
+    // dataオブジェクトを使用するuseEffect
     console.log(data.name); // John
     console.log(data.age); // 30
   }, [data]);

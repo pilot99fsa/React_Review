@@ -1,5 +1,9 @@
 // ログインページのコンポーネント
 function Login() {
-  return <div>ログインページです</div>;
+  return (
+    <div>
+      <p>ログインページです</p>
+    </div>
+  );
 }
 export default Login;

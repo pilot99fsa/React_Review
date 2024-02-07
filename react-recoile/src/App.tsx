@@ -1,9 +1,10 @@
 // Chakra UIを使うには、１.まずChakraProviderをimportする
-import { Button, ChakraProvider } from '@chakra-ui/react';
+import { ChakraProvider } from '@chakra-ui/react';
 import { BrowserRouter } from 'react-router-dom';
 
 // コンポーネント全体に適用されるグローバルなスタイル
 import theme from './theme/theme';
+import Router from './router/Router';
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
     <ChakraProvider theme={theme}>
       {/* React-router-domを使うにはアプリ全体を囲む、chakraproviderはページのコンポーネントではなので囲まなくても良い*/}
       <BrowserRouter>
-        <Button colorScheme="teal">ボタン</Button>
+        <Router />
       </BrowserRouter>
     </ChakraProvider>
   );

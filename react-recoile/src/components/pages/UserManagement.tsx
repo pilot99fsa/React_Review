@@ -1,5 +1,5 @@
 // ユーザー管理ページのコンポーネント
 function UserManagement() {
-  return <div>ログインページです</div>;
+  return <div>ユーザー管理ページです</div>;
 }
 export default UserManagement;

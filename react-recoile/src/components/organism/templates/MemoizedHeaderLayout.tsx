@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import React, { ReactNode } from 'react';
 import Header from '../layout/Header';
 
 type Props = {
@@ -13,5 +13,6 @@ function HeaderLayout({ children }: Props): JSX.Element {
     </>
   );
 }
+const MemoizedHeaderLayout = React.memo(HeaderLayout);
 
-export default HeaderLayout;
+export default MemoizedHeaderLayout;
